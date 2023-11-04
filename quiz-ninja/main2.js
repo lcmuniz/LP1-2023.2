@@ -1,18 +1,3 @@
-const view = {
-  score: document.getElementById('score'),
-  question: document.getElementById('question'),
-  result: document.getElementById('result'),
-  info: document.getElementById('info'),
-
-  render(target, content, attributes) {
-    for (const key in attributes) {
-      target.setAttribute(key, attributes[key])
-    }
-    target.innerHTML(content)
-  }
-
-}
-
 const quiz = [
   {name: "Qual o nome real do Superman?", realName: "Clark Kent"},
   {name: "Qual o nome real da Mulher-Maravilha?",  realName: "Diana Prince"},
@@ -35,7 +20,6 @@ const game = {
 
   ask: function () {
     const question =  'Qual o nome real do ' + this.question.name + "?"
-    view.render(view.question, question)
     const response = prompt(question)
     this.check(response)
   },
