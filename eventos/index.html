@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos</title>
+  <script src="script.js" defer></script>
+  <style>
+    img {
+      width: 200px;
+    }
+    #container {
+      position: absolute;
+      top:200px;
+      left: 0px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Eventos</h1>
+  
+  <form id="form" method="get" action="teste.html">
+    <table>
+      <tr><td>Nome</td><td><input type="text" /></td></tr>
+      <tr><td>Idade</td><td><input type="number" /></td></tr>
+      <tr><td>Estado Civil</td>
+          <td>
+              <select>
+                <option>Solteiro</option>
+                  <option>Casado</option>
+              </select>
+          </td>
+      </tr>
+      <tr><td>Endereço</td><td><textarea cols="60" rows="5" ></textarea></td></tr>
+      <tr><td></td><td><input id="okButton" type="submit" value="Enviar"/></td></tr>
+    </table>
+  </form>
+
+</body>
+</html>

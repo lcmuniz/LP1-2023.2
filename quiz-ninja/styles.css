@@ -6,16 +6,16 @@ body {
 }
 
 .dojo {
-  background: url(https://cdn.rawgit.com/alexmwalker/6acbe9040d9fe6e5e9fd758a25e1b2a5/raw/9c8131eb2ccc1e3839a5a5114cb16b5dc74daf04/dojo.svg) no-repeat;
   width: 100%;
   height: 800px;
   background-size: 100% auto;
   padding-top: 10px;
 }
 
-.quiz-body {
+.questionario-body {
+  width: 600px;
   background: rgba(255, 255, 255, 1);
-  margin: 150px 33%;
+  margin: 100px auto;
   padding: 10px 20px 50px 20px;
   -webkit-box-shadow: 4px 4px 11px 3px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 4px 4px 11px 3px rgba(0, 0, 0, 0.3);
@@ -42,22 +42,22 @@ button {
   font-size: 24px;
 }
 
-#question {
+#pergunta {
   font-size: 24px;
 }
 
-#result {
+#resultado {
   color: #fff;
   margin: 0.2em 0;
   width: 100%;
   text-align: center;
 }
 
-.correct {
+.correto {
   background-color: #0c0;
 }
 
-.wrong {
+.errado {
   color: #fff;
   background-color: #c00;
 }
